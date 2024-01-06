@@ -6,7 +6,7 @@ require("./connection/conn.js");
 
 const bookRoute = require("./routers/bookRouter.js");
 app.use(cors({
-              origin:["https://book-stack-server.vercel.app"],
+              origin:["http://localhost:3000"],
               methods:["POST","GET","PUT","DELETE"],
               credentials: true,
 }
