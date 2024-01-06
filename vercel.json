@@ -1,11 +1,9 @@
 {
    "version": 2,
-   
    "builds": [
       { "src": "app.js", "use": "@vercel/node" }
    ],
    "routes": [
-      { "src": "/api/(.*)", "dest": "/router/bookRouter.js" },
-      { "src": "/(.*)", "dest": "/app.js" }
+      { "src": "/(.*)", "dest": "/app.js" } 
    ]
 }
