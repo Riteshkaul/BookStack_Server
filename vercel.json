@@ -1,3 +1,11 @@
 {
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
+   "version": 2,
+   "name": "music-album",
+   "builds": [
+      { "src": "app.js", "use": "@vercel/node" }
+   ],
+   "routes": [
+      { "src": "/api/(.*)", "dest": "/router/bookRouter.js" },
+      { "src": "/(.*)", "dest": "/app.js" }
+   ]
 }
